@@ -1,0 +1,159 @@
+body {
+    background-color: white;
+}
+
+.web {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+}
+
+.site-logo {
+    float: left;
+    width: 20%;
+    height: 60%;
+    clear: left;
+    padding-top: 22px;
+    padding-bottom: 1%;
+}
+
+.site-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.site-name {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.site-name h1{
+    font-size: 300%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.site-register {
+    float: right;
+    width: 30%;
+    clear: right;
+    padding-bottom: 2%;
+}
+
+.site-register a {
+    border: 1px solid black;
+    color: black;
+    background-color: antiquewhite;
+    text-decoration: none;
+}
+
+.barra-menu {
+    clear: both;
+    text-align: center;
+    word-spacing: 100px;
+    background-color: #CCCC00;
+    margin: auto auto 1%;
+}
+
+.barra-menu li{
+    list-style: none;
+    float: right;
+}
+
+.barra-menu a{
+    text-decoration: none;
+    font-size: 100%;
+    color: #000000;
+}
+
+.main{
+    width: 1100px;
+    height: 60%;
+    clear: both;
+}
+
+.historial a{
+    text-decoration: none;
+    height: 5%;
+}
+
+.noticias {
+    float: left;
+    width: 15%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #993333;
+    margin-top: 10px;
+}
+
+.noticias section {
+    padding-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+}
+
+.noticias a {
+    text-decoration: none;
+    font-size: 100%;
+    color: #ffffff;
+}
+
+.exposiciones {
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+
+.exposiciones section {
+    float: left;
+    margin: 10px;
+    width: 400px;
+    height: 408px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.exposiciones img {
+    width: 400px;
+    height: 250px;
+}
+
+.exposiciones p {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.footer{
+    height: 10%;
+    clear: both;
+}
+.contacto {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    background-color: #CCCC00;
+}
+
+.contacto a{
+    text-decoration: none;
+    font-size: 100%;
+    color: #663366;
+    padding-left: 10px;
+}
+/*Adaptacion de diseño */
+@media (max-width: 480px), (orientation: portrair) {
+    .web{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+

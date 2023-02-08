@@ -1,0 +1,74 @@
+.Tituloexposicion {
+    float: left;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.Tituloexposicion h1 {
+    text-align: center;
+}
+
+.Tituloexposicion img {
+    width: 400px;
+    height: 250px;
+    clear: left;
+}
+
+.imgExposicion {
+    float: left;
+    margin: 10px auto;
+    width: 40%;
+    height: 250px;
+}
+
+.datos {
+    float: left;
+    width: 55%;
+    height: 250px;
+    margin-left: 20px;
+    display: inline;
+    clear: right;
+}
+
+.piezas {
+    float: left;
+    width: 1200px;
+    height: auto;
+    margin: 30px 20px 10px;
+}
+
+.piezas section {
+    float: left;
+    margin: 10px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+}
+
+.piezas img {
+    width: 100%;
+}
+
+.piezas p {
+    font-size: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.piezas a{
+    text-decoration: none;
+}
+
+.Comentario form{
+    float: right;
+    width: 80%;
+}
+
+/*Adaptacion de diseño */
+@media (max-width: 480px), (orientation: portrair) {
+    .web{
+        flex-direction: column;
+        height: 100%;
+    }
+}

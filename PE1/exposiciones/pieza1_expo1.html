@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Practica Evaluable I</title>
+    <link rel="stylesheet" type="text/css" href="../intex.css">
+    <link rel="stylesheet" type="text/css" href="expo.css">
+</head>
+
+<body>
+    <section class="web">
+        <header role="banner" aria-label="Cabecera de sitio">
+            <section class="top-bar">
+                <section class="site-logo">
+                    <a href="../intex.html">
+                        <img src="../imagenes/logo.png" alt="Pagina Principal">
+                    </a>
+                </section>
+                <section class="site-name">
+                    <h1>SERENDIPITY</h1>
+                </section>
+                <section class="site-register">
+                    <form method="get" action="">
+                        <p>Ususario:
+                            <input type="text" style="color: #999999;" value="Introduzca su usuario" name="Usuario"
+                                onfocus="if (this.value == 'Introduzca su usuario'){this.value='';this.style.color='#424242'}"
+                                onblur="if (this.value==''){this.value='Introduzca su usuario';this.style.color='#999999'}">
+                        <p>Contraseña:<input type="password"></p>
+                        </p>
+                        <input type="submit">
+                    </form>
+                    <br>
+                    <a href="altapublico.html">Registro de usuarios</a>
+                    <a href="altacomisario.html">Registro de comisarios</a>
+                </section>
+            </section>
+            <section class="barra-menu">
+                <a href="fotografia.html">Fotografia</a>
+                <a href="pintura.html">Pintura </a>
+                <a href="escultura.html">Escultura</a>
+            </section>
+        </header>
+
+        <section class="historial">
+            <a href="../intex.html">Inicio </a>
+            << <a href="expo1.html"> Exposición: Enamórate de la Ciudad Prohibida </a>
+                << <a href="pieza1_expo1.html"> Pieza 1: 夕阳_Puesta de sol </a>
+
+        </section>
+
+        <section class="Tituloexposicion">
+            <h1>夕阳: Puesta de sol</h1>
+            <section class="imgExposicion">
+                <img src="../imagenes/pieza1.jpeg" title="puesta de sol">
+            </section>
+            <section class="datos">
+                <p>
+                    Nombre: Puesta de sol
+                    <br> Autor: Zhu Kai
+                    <br> Descripcion: Ciudad Prohibida al atardecer
+
+                    <br> El comienzo del invierno es el mejor momento para ir a la Ciudad Prohibida.
+                    El clima no será demasiado frío, la puesta de sol será más temprana y los colores de la puesta de
+                    sol serán muy brillantes.
+                    Entra y camina antes de que cierre el museo. Hay muy pocas personas cuando está a punto de cerrarse,
+                    toda la ciudad imperial
+                    se vuelve extraordinariamente vacía y silenciosa. Es muy deslumbrante bajo la puesta de sol naranja.
+                    Con más vitalidad.
+                </p>
+            </section>
+        </section>
+
+        <section class="Comentario">
+            <form action="comentario.html" method="post">
+                Comentario:<br />
+                <textarea cols="60" rows="5">
+                </textarea>
+                <br /><br />
+                <input type="submit" value="Enviar" />
+            </form>
+            <section class="Like">
+                <style type="text/css">
+                    .Like {
+                        float: right;
+                        padding-top: 10px;
+                        width: 100px;
+                        height: 100px;
+                        background: url(../imagenes/like.png) no-repeat;
+                        background-position: left;
+                        background-size: cover;
+                        transition: all 1s ease-in-out 999999s;
+                    }
+
+                    .Like:hover {
+                        background-position: right;
+                        transition: background .6s steps(28);
+                    }
+                </style>
+            </section>
+        </section>
+
+
+        <footer>
+            <section class="contacto">
+                <a href="Mapa_Web">Mapa Web</a>
+                <a href="Quejas_sugerencias">Quejas y Quejas y Sugerencias</a>
+                <a href="Licencia_de_imagen">Licencia de imagen</a>
+                <a href="Politica_de_privacidad">Política de privacidad</a>
+                <a href="Aviso_de_derechos_de_autor">Aviso de derechos de autor</a>
+                <a href="Tablero_mensaje">Tablero de mensajes</a>
+                <a href="Acerca_de_nosotros">Acerca de nosotros</a>
+                <a href="../como_se_hizo.pdf">como se hizo</a>
+                <br> Mantenimiento del sitio web: Departamento Digital e Información del serendipity
+                <br> Contacto: serendipity@gmail.com
+            </section>
+        </footer>
+    </section>
+</body>
+
+</html>
