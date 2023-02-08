@@ -1,0 +1,32 @@
+<?php
+session_start();
+require_once("configuracion.php");
+require_once("conexion.php");
+
+$email = $_POST["email"];
+$contrasenia = $_POST["password"];
+$usuario_n = $_POST["usuario"];
+$usuario = $_SESSION['usuario'];
+
+try {
+
+    $sql = "UPDATE " . USUARIOS . " SET email =:email, usuario =:usuario, password =:password WHERE usuario = :usuario";
+    $sentencia = $conexion->prepare($sql);
+    $sentencia->bindValue(":email", $email);
+    $sentencia->bindValue(":usuario", $usuario_n);
+    $sentencia->bindValue(":password", $contrasenia);
+    $sentencia->bindValue(":usuario", $usuario);
+    $sentencia->execute();
+
+    $_SESSION['usuario'] = $usuario;
+    $_SESSION['email'] = $email;
+    $_SESSION['password'] = $contrasenia;
+    $_SESSION['tipo'] = "Usuario";
+
+} catch (PDOException $e) {
+    echo $e;
+    $conexion = null;
+    die();
+}
+header("Location: editarUsu.php");
+?>
